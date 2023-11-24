@@ -4,4 +4,4 @@ from .models import FILE_HASHES
 class FileHashSerializer(serializers.ModelSerializer):
     class Meta:
         model = FILE_HASHES
-        fields = ('id', 'file_name', 'file_hash')
+        fields = ('id', 'file_name', 'file_hash', 'vendor', 'product', 'version', 'update', 'language', 'edition', 'checked')
